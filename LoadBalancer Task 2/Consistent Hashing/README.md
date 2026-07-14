@@ -57,11 +57,9 @@ Task2-Consistent-Hashing/
 ├── test_consistent_hash.py
 ├── README.md
 ├── .gitignore
-│
-└── screenshots/
-    ├── hash_ring.png
-    ├── demo_output.png
-    └── tests.png
+├── hash_ring.png
+├── demo_output.png
+└── tests.png
 ```
 
 # Technologies Used
@@ -134,7 +132,7 @@ The following screenshots demonstrate the successful implementation.
 
 This screenshot shows the creation of the consistent hash ring and placement of virtual servers.
 
-![Hash Ring](image-1.png)
+<img width="692" height="452" alt="hash_ring png" src="https://github.com/user-attachments/assets/18776ee7-3be4-4edf-bcdd-d25691c7abfc" />
 
 ---
 
@@ -147,8 +145,10 @@ The demonstration program shows:
 - Removing a server
 - Adding another server
 - Updated request mapping
-![Demo Output](<Screenshot 2026-07-14 172646.png>)
-![Demo Output](image.png)
+<img width="695" height="434" alt="demo_output png" src="https://github.com/user-attachments/assets/f8c01c38-b6b4-4975-a0b7-f1b76dd77e08" />
+
+<img width="683" height="425" alt="demo_output2 png" src="https://github.com/user-attachments/assets/2dfdf8eb-1237-4451-b853-0541c6ca7a92" />
+
 
 ---
 
