@@ -27,7 +27,7 @@ VALID_PATHS = {"home"}
 
 
 def _bootstrap():
-    default_hostnames = [f"Server {i}" for i in range(1, INITIAL_N + 1)]
+    default_hostnames = [f"Server-{i}" for i in range(1, INITIAL_N + 1)]
     manager.add_servers(INITIAL_N, default_hostnames)
 
 

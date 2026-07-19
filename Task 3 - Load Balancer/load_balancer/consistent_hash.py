@@ -43,31 +43,27 @@ class ConsistentHash:
         self.servers = {}
 
     # Hash Functions
-
+# Hash Functions
 
     def request_hash(self, request_id):
         """
-        Hash a client request.
-
-        H(i)=i²+2i+17
+        A-4: linear hash instead of quadratic.
+        H(i) = i + 17
         """
 
-        return (request_id ** 2 + 2 * request_id + 17) % self.slots
+        return (request_id + 17) % self.slots
 
     def server_hash(self, server_id, replica):
         """
-        Hash a virtual server.
-
-        Φ(i,j)=i²+j²+2j+25
+        A-4: linear hash instead of quadratic.
+        Φ(i,j) = i + 3j + 25
         """
 
         return (
-            server_id ** 2
-            + replica ** 2
-            + 2 * replica
+            server_id
+            + replica * 3
             + 25
         ) % self.slots
-
     
     # Collision Resolution
 
